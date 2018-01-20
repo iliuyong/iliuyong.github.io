@@ -190,6 +190,26 @@
         </li>
       
         
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -232,7 +252,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/08/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/20/Ubuntu16查看crontab日志/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="iliuyong">
@@ -251,7 +271,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/01/08/hello-world/" itemprop="url">Hello World</a></h1>
+                <a class="post-title-link" href="/2018/01/20/Ubuntu16查看crontab日志/" itemprop="url">ubuntu16查看crontab日志</a></h1>
         
 
         <div class="post-meta">
@@ -263,8 +283,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-08T11:12:13+08:00">
-                2017-01-08
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-20T13:39:00+08:00">
+                2018-01-20
               </time>
             
 
@@ -286,8 +306,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/分类1/" itemprop="url" rel="index">
-                    <span itemprop="name">分类1</span>
+                  <a href="/categories/运维/" itemprop="url" rel="index">
+                    <span itemprop="name">运维</span>
                   </a>
                 </span>
 
@@ -324,14 +344,170 @@
 
       
         
-          文章描述
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/01/08/hello-world/">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
+            <p>Ubuntu16默认crontab日志未开启</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/rsyslog.d/50-default.conf <span class="comment">#修改rsyslog配置文件</span></span><br><span class="line">cron.*  /var/<span class="built_in">log</span>/cron.log <span class="comment">#将cron前面的注释符去掉</span></span><br><span class="line">service rsyslog  restart <span class="comment">#重启rsyslog</span></span><br><span class="line">less  /var/<span class="built_in">log</span>/cron.log <span class="comment">#查看crontab日志</span></span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/08/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="iliuyong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="外星人">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/01/08/hello-world/" itemprop="url">github+hexo+next搭建博客</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-08T11:12:13+08:00">
+                2017-01-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/运维/" itemprop="url" rel="index">
+                    <span itemprop="name">运维</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Github-Pages"><a href="#Github-Pages" class="headerlink" title="Github Pages"></a>Github Pages</h1><p>是Github提供的静态文件服务器，可以使用Github Pages搭建博客、网站，其特点<br>(1)只支持静态网页，够用；<br>(2)免费，不用花一分钱<br>(3)可以绑定自己的域名</p>
+<h1 id="Hexo基于node技术的博客框架"><a href="#Hexo基于node技术的博客框架" class="headerlink" title="Hexo基于node技术的博客框架"></a>Hexo基于node技术的博客框架</h1><p>快速、简洁且高效。Hexo 使用 Markdown（或其他渲染引擎）解析文章，<br>在几秒内，即可利用靓丽的主题生成静态网页。<br><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/index.html</a>  中文文档</p>
+<h1 id="next是Hexo的一个漂亮主题"><a href="#next是Hexo的一个漂亮主题" class="headerlink" title="next是Hexo的一个漂亮主题"></a>next是Hexo的一个漂亮主题</h1><p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">http://theme-next.iissnan.com/getting-started.html</a> NexT主题使用文档<br><a href="https://hexo.io/themes" target="_blank" rel="noopener">https://hexo.io/themes</a>  列出很多很优秀的主题，点击图片预览，点击主题名称进入主题Github页面,然后下载即可<br><a href="https://www.zhihu.com/question/24422335" target="_blank" rel="noopener">https://www.zhihu.com/question/24422335</a> 知乎？有哪些好看的 Hexo 主题</p>
+<h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server --port=9000  --debug #默认端口4000，我的电脑4000被占用了</span><br></pre></td></tr></table></figure>
+<p>然后浏览器访问  <a href="http://127.0.0.1:9000/" target="_blank" rel="noopener">http://127.0.0.1:9000/</a></p>
+<h1 id="安装主题NexT"><a href="#安装主题NexT" class="headerlink" title="安装主题NexT"></a>安装主题NexT</h1><p><a href="https://github.com/iissnan/hexo-theme-next/releases" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next/releases</a><br>前往 NexT 版本 发布页面，下载 Download 区域下的 Source Code (zip) 到本地。<br>解压所下载的压缩包至站点的 themes 目录下， 并将 解压后的文件夹名称（hexo-theme-next-0.4.0）更改为 next。<br>启用主题,打开 站点配置文件， 找到 theme 字段，并将其值更改为 next。<br>theme: next<br>在切换主题之后、验证之前，我们最好使用 hexo clean 来清除 Hexo 的缓存。</p>
+<p>首先启动 Hexo 本地站点，并开启调试模式（即加上 –debug），整个命令是 hexo s –debug。<br>在服务启动的过程，注意观察命令行输出是否有任何异常信息，如果你碰到问题，这些信息将帮助他人更好的定位错误。<br>来源： <a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">http://theme-next.iissnan.com/getting-started.html</a></p>
+<h1 id="设置-作者昵称"><a href="#设置-作者昵称" class="headerlink" title="设置 作者昵称"></a>设置 作者昵称</h1><p>编辑 站点配置文件， 设置 author 为你的昵称。<br>站点描述<br>编辑 站点配置文件， 设置 description 字段为你的站点描述。站点描述可以是你喜欢的一句签名:)</p>
+<h1 id="发表文章"><a href="#发表文章" class="headerlink" title="发表文章"></a>发表文章</h1><p>详见 <a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/writing.html</a></p>
+<h1 id="添加标签页面"><a href="#添加标签页面" class="headerlink" title="添加标签页面"></a>添加标签页面</h1><p>新建页面 hexo new page tags<br>source下会新生成新的文件夹tags，在该文件夹下会有一个index.md文件<br>设置index.md  type:tags，index.md文件内容如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: tags</span><br><span class="line">date: 2017-11-15 19:10:05</span><br><span class="line">type: tags</span><br></pre></td></tr></table></figure>
+<p>菜单设置<br>修改next主题的_config.yml文件中的menu选项，去掉tags的注释</p>
+<h1 id="添加分类页面"><a href="#添加分类页面" class="headerlink" title="添加分类页面"></a>添加分类页面</h1><p>步骤与添加标签页面类似，具体如下：<br>新建页面hexo new page categories<br>source下会新生成新文件夹categories，在该文件夹下会有一个index.md文件<br>设置页面类型 index.md中添加type: categories</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: categories</span><br><span class="line">date: 2017-11-15 19:11:13</span><br><span class="line">type: categories</span><br></pre></td></tr></table></figure>
+<p>菜单设置<br>修改next主题的_config.yml文件中的menu选项，去掉 categories的注释</p>
+<h1 id="Github-Pages创建"><a href="#Github-Pages创建" class="headerlink" title="Github Pages创建"></a>Github Pages创建</h1><p>前提是你有github账号，假设你的账号是 ：demo<br>创建一个项目名称是  demo.github.io<br>项目根目录添加index.html，内容随意<br>然后用浏览器访问，demo.github.io，即可看到index.html的内容了；</p>
+<h1 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h1><p>npm install hexo-deployer-git –save<br>hexo clean<br>hexo generate<br>hexo deploy<br>注意deploy最后要，输入你的username及passward</p>
+<h1 id="三款流行的开源静态网站构建工具"><a href="#三款流行的开源静态网站构建工具" class="headerlink" title="三款流行的开源静态网站构建工具"></a>三款流行的开源静态网站构建工具</h1><p>（1）jekyll ruby 历史悠久，开源已9年，模板和插件众多，但是构建速度慢<br>（2）hexo node.js 前端开发者用户居多<br>（3）hugo go Go大神spf13开发，开源已4年，升级活跃，构建速度极快，后端开发者用户居多<br>以上工具都可以将markdown内容转换为静态页面</p>
+<p>#参考资料<br>静态网站构建工具简介# 静态网站构建工具简介<br><a href="https://jimmysong.io/hugo-handbook/tools/intro.htmlhexo" target="_blank" rel="noopener">https://jimmysong.io/hugo-handbook/tools/intro.htmlhexo</a><br>next下的分类和表签无法显示，怎么解决？<br><a href="https://www.zhihu.com/question/29017171" target="_blank" rel="noopener">https://www.zhihu.com/question/29017171</a><br>hexo从零开始到搭建完整<br><a href="http://www.cnblogs.com/visugar/p/6821777.html" target="_blank" rel="noopener">http://www.cnblogs.com/visugar/p/6821777.html</a></p>
+
+          
         
       
     </div>
@@ -411,7 +587,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -421,10 +597,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
+                <a href="/categories/index.html">
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">分类</span>
-                
+                </a>
               </div>
             
 
@@ -432,10 +608,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">2</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
